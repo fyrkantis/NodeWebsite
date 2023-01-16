@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+{{include "/templates/meta.html"}}
+
+	<title>Dave's fantastic website™</title>
+</head>
+<body>
+{{include "/templates/navbar.html"}}
+	<main>
+		<article>{{if title}}
+			<h1>{{title}}</h1>
+			<hr>{{end}}
+			<p>{{if message}}{{message}}{{else}}No further information.{{end}}</p>
+			<a href="/">Return to home page</a>
+		</article>
+	</main>
+</body>
+</html>

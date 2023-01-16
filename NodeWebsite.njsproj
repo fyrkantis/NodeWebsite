@@ -31,6 +31,20 @@
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="website\daveWithHats.png" />
+    <Content Include="website\favicon.ico" />
+    <Content Include="website\index.html" />
+    <Content Include="website\navbar.css" />
+    <Content Include="website\style.css" />
+    <Content Include="templates\error.html" />
+    <Content Include="templates\fakeEnv.txt" />
+    <Content Include="templates\message.html" />
+    <Content Include="templates\meta.html" />
+    <Content Include="templates\navbar.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="website\" />
+    <Folder Include="templates\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>

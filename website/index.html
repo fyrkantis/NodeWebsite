@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	{{include "/templates/meta.html"}}
+
+	<title>Dave's fantastic website™</title>
+</head>
+<body>
+{{include "/templates/navbar.html"}}
+	<main>
+		<article>
+			<h1>Dave's Fantastic Website&trade;</h1>
+			<hr>
+			<aside>
+				<figure>
+					<img src="/daveWithHats.png" alt="David with 3 hats on looking into the camera like a sociopath.">
+					<figcaption>There's no such thing as <i>&ldquo;too many hats&rdquo;</i>.</figcaption>
+				</figure>
+			</aside>
+			<p>It's great!</p>
+			<form action="/guest/" method="POST">
+				<fieldset>
+					<legend>Guest Book</legend>
+					<label for="name">Sign your name</label>
+					<br>
+					<input name="name" type="text" placeholder="Name" required>
+					<input type="submit" value="Sign">
+					<table>
+						<tr>
+							<th>Previous Guests</th>
+						</tr>
+						{{if guests && guests.size > 0}}{{for guest in guests}}
+						<tr>
+							<td>{{guest}}</td>
+						</tr>{{end}}{{else}}<tr>
+							<td><i>None</i></td>
+						</tr>
+						{{end}}
+					</table>
+				</fieldset>
+			</form>
+		</article>
+	</main>
+</body>
+</html>

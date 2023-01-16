@@ -1,0 +1,3 @@
+C:\Users\david\source\repos\NodeWebsite\obj\Debug\NodeWebsite.njsproj.AssemblyReference.cache
+C:\Users\david\source\repos\NodeWebsite\obj\Debug\NodeWebsite.njsproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\NodeWebsite\bin\Microsoft.NodejsTools.WebRole.dll
